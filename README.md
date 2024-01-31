@@ -16,5 +16,5 @@ Delete excess bookmark from Word -> PDF (only applicable for specific Bookmark h
 ## Flight Plan Collector
 Python
 ```
-Collect PDF OFP from OCD's OneDrive -> compare to Jeppesen Server -> get txt
+Collect PDF OFP from OCD's OneDrive -> compare to Jeppesen Server -> get txt file.
 ```
