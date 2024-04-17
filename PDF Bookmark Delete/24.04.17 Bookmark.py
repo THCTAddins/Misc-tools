@@ -2,7 +2,7 @@ import fitz
 import re
 import sys
 import time
-from win10toast import ToastNotifier
+from winotify import Notification
 import tkinter as tk
 from tkinter import filedialog
 
@@ -26,7 +26,8 @@ if __name__ == "__main__":
 
         while True:
             time.sleep(1)
-            ToastNotifier.show_toast("Finished executing "+sys.argv[0],"Successful",icon_path='',duration=10)
+            toast = Notification("Bookmark Deleter","Finished executing "+sys.argv[0],"Successful",icon='')
+            toast.show()
             #print('Successful')
             #time.sleep(1)
             break
@@ -34,7 +35,8 @@ if __name__ == "__main__":
     except Exception as e:
         while True:
             time.sleep(1)
-            ToastNotifier.show_toast("Error in executing "+sys.argv[0],str(e),icon_path='',duration=10)
+            toast = Notification("Bookmark Deleter","Error in executing "+sys.argv[0],str(e),icon='')
+            toast.show()
             #print(e)
             #time.sleep(1)
             break
